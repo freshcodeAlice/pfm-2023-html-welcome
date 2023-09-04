@@ -1,43 +1,30 @@
-body {
-    background-color: darkgrey;
-}
-
 p {
-    color:#2a2145;
+    color: blue;
 }
 
-
-.big-yellow {
-    color: rgb(14, 14, 6);
-    font-size: 16px;
-}
-
-.background {
-    background-color: rgba(126, 108, 59, 0.1);
-}
-
-#parag1 {
+.red {
     color: red;
 }
 
-section {
-    width: 500px;
+.violet {
+    color: violet;
 }
 
-.container {
-    width: 50%;
+
+#green {
+    color: green;
 }
+
 
 /*
-1px - pixel
-16px = 16px на будь-якому екрані
-pt - punkt
 
-% - доля розміру батьківського елементу
+tag - 0001
+.class - 0010
+#id - 0100
+
+inline - 1000
 
 
-width - ширина
-height - висота
-
+!important - це спосіб перезатерти стилі
 
 */
