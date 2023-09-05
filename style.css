@@ -2,14 +2,9 @@
     color: blue;
     border: 2px solid rgba(0, 0, 0, 0.193);
     font-size: 30px;
-    width: 400px;
-    padding: 20px;
-    box-sizing: border-box;
+    margin-bottom: 30px;
 }
 
-#box {
-    padding-left: 30px;
-}
 
 
 span {
@@ -18,10 +13,7 @@ span {
 
 .wrapper {
     border: 2px solid black;
-    padding: 30px;
-    margin: 50px; /* не враховуються! */
-    width: 400px;
-    box-sizing: border-box;
+    margin-top: 45px;
 }
 
 
@@ -71,3 +63,20 @@ bottom - 30px
 left - 40px
 
 */
+
+
+/*
+
+Створити два елементи-контейнери
+В першому - 50 слів
+В другому- картинка
+
+Обом елементам задати фоновий колір, зробити відступи внутрішні 30px, і зовнішні відступи 10
+Дати всій сторінці інший фоновий колір
+
+Задати елементам рамку
+збільшити внутрішні відступи, після цього задати фіксований розмір елементів-контейнерів
+
+*/
+
+
