@@ -1,47 +1,31 @@
-p {
+.main-article {
     color: blue;
-    /* font-size: 19px;
-    font-style: italic;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif; */
-    font: italic 700 19px Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    line-height: 90px;
 }
 
-.red {
+
+.article-header {
+    font-size: 1.5em; /* 90px */
+}
+
+.article-content {
+    font-size: 0.5em; /* 30px */
+    line-height: 1.2; /* висота рядка вираховується відносно розміру тексту елемента */
+}
+
+span {
     color: red;
+    font-size: 0.5em; /* 15px */
 }
 
-.violet {
-    color: violet;
-}
-
-
-#green {
-    color: green;
-}
+/* inherit (inheritance - наслідування) - значення, яке ми наслідуємо у батьківського елементу */
 
 
 /*
 
-tag - 0001
-.class - 0010
-#id - 0100
+1em -  це один розмір батьківського тексту
 
-inline - 1000
-
-
-!important - це спосіб перезатерти стилі
-
-*/
-
-
-
-/*
-Створити три абзаци - першому дати селектор класу, id
-Другому дати два селектори класу
-Третьому ніяких 
-
-Прописати правила для кольору тексту для всіх вказаних селекторів і дослідити, який колір тексту буде виконаний  для елемента з двома класами, якщо поміняти опис css-правил у файлі
-
+rem - root em - це розмір тексту рутового елементу 
 
 */
