@@ -1,20 +1,23 @@
-.box {
-    width: 200px;
-    height: 200px;
-    border: 3px solid grey;
-    margin: 20px;
-    display: inline-block;
-    border-radius: 50%;
+.container {
+    background-color: rgb(115, 115, 115);
+    color: black;
+    padding: 10px;
+min-width: 300px;
+max-width: 500px;
+min-height: 300px;
+max-height: 500px;
 }
 
-.violet {
-    background-color: violet;
-}
+/*
+width - фіксована ширина
+height - фіксована висота
 
-.purple {
-    background-color: purple; 
-}
+min-width - мінімальна ширина (елемент не може стати менше неї)
+min-height - мінімальна висота 
 
-.blue {
-    background-color: blue;
-}
+
+max-width - максимальна ширина
+max-height - максимальна висота
+
+
+*/
