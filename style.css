@@ -1,18 +1,27 @@
-body {
-    background-color: brown;
+
+.container {
+    width: 100%;
+    height: 1000px;
+    background-image: url('./assets/pexels-johannes-plenio-1423600.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 50%;
-}
+/*
+background
 
-.hortizontal-cat {
-    object-position: left;
-}
+Повторення картинки на фоні
+background-repeat: no-repeat;
+//background-repeat-x: repeat;
+//background-repeat-y: repeat;
 
-.vertical-cat {
-    object-position: top;
+
+
+*/
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(30, 143, 255, 0.291);
 }
