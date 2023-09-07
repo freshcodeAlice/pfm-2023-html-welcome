@@ -2,22 +2,22 @@
     background-color: rgb(115, 115, 115);
     color: black;
     padding: 10px;
-min-width: 300px;
-max-width: 500px;
-min-height: 300px;
-max-height: 500px;
+width: 400px;
+height: 400px;
+overflow-y: scroll;
 }
 
 /*
-width - фіксована ширина
-height - фіксована висота
+Overflow - переповнення
 
-min-width - мінімальна ширина (елемент не може стати менше неї)
-min-height - мінімальна висота 
+overflow: hidden
+приховує ту частину контенту, яка вилізає за мені батьківського елементу
 
+overflow: scroll
+створює скролл по вертикалі (y) і горизонталі (х)
 
-max-width - максимальна ширина
-max-height - максимальна висота
-
+якщо по горизонталі він не потрібен, варто вказувати тільки по y
+overflow-y: scroll
+oveflow-x: hidden
 
 */
