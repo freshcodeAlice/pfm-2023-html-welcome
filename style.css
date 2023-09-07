@@ -1,23 +1,18 @@
-.container {
-    background-color: rgb(115, 115, 115);
-    color: black;
-    padding: 10px;
-width: 400px;
-height: 400px;
-overflow-y: scroll;
+body {
+    background-color: brown;
 }
 
-/*
-Overflow - переповнення
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
-overflow: hidden
-приховує ту частину контенту, яка вилізає за мені батьківського елементу
+.hortizontal-cat {
+    object-position: left;
+}
 
-overflow: scroll
-створює скролл по вертикалі (y) і горизонталі (х)
-
-якщо по горизонталі він не потрібен, варто вказувати тільки по y
-overflow-y: scroll
-oveflow-x: hidden
-
-*/
+.vertical-cat {
+    object-position: top;
+}
