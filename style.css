@@ -1,13 +1,3 @@
-body {
- 
-}
-
-
-.list {
-
-}
-
-.item {
-    list-style-type: disc;
-    list-style-image: url(./assets/8686782_ic_fluent_arrow_sync_regular_icon.png);
+p {
+    margin-top: 2%;
 }
