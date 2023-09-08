@@ -1,41 +1,15 @@
 table {
-    border: none;
-    background-color: rgb(0, 193, 184);
-    color: white;
-    text-transform: uppercase;
+    border: 1px solid black;
     border-collapse: collapse;
 }
 
 caption {
-    background-color: inherit;
-    padding: 20px 0;
-    font-size: 1.5em;
+    border: inherit;
 }
 
-thead {
-    background-color: rgb(50, 215, 205);
-}
-
-.head {
-    padding: 20px 35px;  
-}
-
-
-tbody {
-
-}
-
-tr {
-
-}
 
 td {
-    border: none;
-    padding: 10px 35px;
-    font-size: 0.8em;
-}
-
-img {
-    width: 20px;
-    height: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
 }
