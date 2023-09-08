@@ -6,23 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./reset.css">
+    <!-- <link rel="stylesheet" href="./reset.css">  -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <section>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio mollitia repudiandae excepturi culpa iusto sapiente eligendi ea tempora natus modi fuga est magni molestias aperiam cupiditate quibusdam, totam nobis eveniet aliquam assumenda architecto eaque quia? Eos enim ratione, sed earum in nemo odio maxime sint explicabo, quod exercitationem, ex laborum!</p>
-       <ul class="list">
-            <li class="item">item 1</li>
-            <li class="item">item 2</li>
-            <li class="item">item 3</li>
-            <li class="item">item 4</li>
-            <li class="item">item 5</li>
-            <li class="item">item 6</li>
-            <li class="item">item 7</li>
-            <li class="item">item 8</li>
-       </ul>
-    </section>
+   <table>
+    <caption>Table caption</caption>
+    <!--table head-->
+    <thead>
+        <tr>   <!-- row - рядок -->
+            <td>1.1 - head</td>
+            <td>1.2 - head</td>
+            <td>1.3 - head</td>
+        </tr>
+    </thead>
+
+    <!-- table body -->
+    <tbody>
+        <tr>   <!-- row - рядок -->
+            <td>2.1 - body</td>
+            <td>2.2 - body</td>
+            <td>2.3 - body</td>
+            <td>2.4 - body</td>
+        </tr>
+        <tr>   <!-- row - рядок -->
+            <td rowspan="2">3.1 - body</td>
+            <td colspan="3">3.2 - body</td>
+        </tr>
+        <tr>   <!-- row - рядок -->
+
+            <td>4.2 - body</td>
+            <td>4.3 - body</td>
+        </tr>
+    </tbody>
+
+    <!--table footer-->  
+    <tfoot>
+        <tr>   <!-- row - рядок -->
+            <td>5.1 - footer</td>
+            <td>5.2 - footer</td>
+            <td>5.3 - footer</td>
+            <td><img src="./assets/buk-derevo.jpg"></td>
+        </tr>
+    </tfoot> 
+    </table>
+</body>
 
 </html>
