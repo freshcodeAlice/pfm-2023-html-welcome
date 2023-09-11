@@ -60,24 +60,22 @@ h3 {
     color: green;
 }
 
-
-/*
-
-Зробити чотири круглих контейнери з фоновим кольором (три з них зробити через div, один через section), за наведення миші у div має змінюватися фоновий колір, у section - ні
-
-
-
-*/
-
-
-.box {
+.button {
+    background-color: cadetblue;
+    color: black;
+    padding: 10px 15px;
+    font-size: 25px;
     width: 100px;
-    height: 100px;
-    background-color: pink;
-    border-radius: 50%;
-    display: inline-block;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-.box:hover:not(section) {
-    background-color: blueviolet;
+.button:hover {
+    background-color: rgb(182, 206, 207);
+}
+
+
+.page-link:focus {
+    color: green;
+    outline: green solid 1px; /*  або обводка ( outline) або border має лишатись на елементі в стані фокусу, щоб вказувати, який елемент в фокусі*/
 }
