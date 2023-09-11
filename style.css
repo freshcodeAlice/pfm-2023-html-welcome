@@ -1,15 +1,35 @@
-table {
-    border: 1px solid black;
-    border-collapse: collapse;
+p {
+    color: green;
 }
 
-caption {
-    border: inherit;
+#id p {
+    color: blue;
 }
 
 
-td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
+#id > p {
+    color: red;
 }
+
+
+
+
+
+
+
+/*
+Селектори
+
+за тегом - всі елементи такого виду (всі теги) - 0001
+за класом - всі елементи з таким класом - 0010
+за id - 1 елемент на сторінці - 0100
+
+(інлайнові завжди мають 1000)
+
+
+Комбінатори
+
+" " (пробіл) - селектор всіх нащадків (descendant selector)
+> - комбінатор дочірніх елементів (child selector)
+
+*/
