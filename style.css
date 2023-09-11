@@ -59,3 +59,25 @@
 h3 {
     color: green;
 }
+
+
+/*
+
+Зробити чотири круглих контейнери з фоновим кольором (три з них зробити через div, один через section), за наведення миші у div має змінюватися фоновий колір, у section - ні
+
+
+
+*/
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.box:hover:not(section) {
+    background-color: blueviolet;
+}
