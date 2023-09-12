@@ -4,78 +4,31 @@
 Псевдоклас - ключове слово, яке визначає стан елементу або його відношення з іншими елементами
 Діє тільки під час активності стані і перевизначає "нормальні" стилі елементу
 
+Стосуються стану елементу:
+
 :hover - стан наведення мишею на елемент
 :active - стан активації (посилання та кнопки в момент натиснення)
-:root - псевдоклас, який знаходить рутовий елемент документу (html)
 :not(selector) - дозволяє обрати всі елементи ОКРІМ вказаного в дужках селектора
+
+Відношення елементів в ієрархії:
+:root - псевдоклас, який знаходить рутовий елемент документу (html)
+
+:first-child - перша дитина свого батька
+:first-of-type - перша дитина ТАКОГО ТИПУ
 
 */
 
-:root {
-    font-size: 30px;
-}
-
-.navigation {
-
-}
-
-.link-list {
-
+ul:first-of-type {
+    color: blue;
 }
 
 
-.link-list li {
-    display: inline-block;
-    list-style-type: none;
-    margin-top: 30px;    
+/*
+Вибрати першу лішку першого улу
 
-}
+*/
 
 
-.page-link {
-    text-decoration: none;
-    padding: 10px;
-    background-color: bisque;
-    border: none;
-}
-
-.page-link:hover:not(button) {
-    background-color: violet;
-    color: white;
-}
-
-.page-link:active {
+ul:first-of-type > li:first-child {
     color: red;
-    background-color: pink;
-}
-
-
-
-
-:not(h3) {
-    color: red;
-}
-
-h3 {
-    color: green;
-}
-
-.button {
-    background-color: cadetblue;
-    color: black;
-    padding: 10px 15px;
-    font-size: 25px;
-    width: 100px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: rgb(182, 206, 207);
-}
-
-
-.page-link:focus {
-    color: green;
-    outline: green solid 1px; /*  або обводка ( outline) або border має лишатись на елементі в стані фокусу, щоб вказувати, який елемент в фокусі*/
 }
