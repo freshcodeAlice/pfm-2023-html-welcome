@@ -32,3 +32,17 @@ ul:first-of-type {
 ul:first-of-type > li:first-child {
     color: red;
 }
+
+
+li:last-child {
+    color: violet;
+}
+
+li:last-of-type {
+    color: brown;
+} 
+
+
+ul:last-of-type > li:last-child {
+    color: green;
+}
