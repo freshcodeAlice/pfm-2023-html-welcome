@@ -18,12 +18,16 @@
 
 :last-child - остання дитина свого батька
 :last-of-type - остання ТАКА дитина свого батька
+
+
+:nth-child() - кожна енна дитина свого батька
+:nth-last-child() - кожна енна дитина з кінця
+
+:nth-of-type() - кожна енна ТАКА дитина свого батька
+:nth-last-of-type() - кожна енна така дитина з кінця
 */
 
 
-li:nth-child(odd) {
-     color: red;
-}
 
 /*
 3n
@@ -46,26 +50,6 @@ li:nth-child(odd) {
 */
 
 
-/*
-Створити 8 квадратів 100x100
-В лінію
-У кожного квадрата фоновий колір:
-
-1 - червоний
-2 - зелений
-3 - синій
-4 - зелений
-5 - червоний
-6 - синій
-7 - червоний
-8 - зелений
-
-
-І все це - трьома css-правилами.
-
-Одним загальним (спільним) правилом визначити спільні стилі і три правила для бекграунду
-*/
-
 .box {
     width: 100px;
     height: 100px;
@@ -73,15 +57,6 @@ li:nth-child(odd) {
     display: inline-block;
 }
 
-
-.box:nth-child(2n+1) {
-    background-color: red;
-}
-
-.box:nth-child(2n) {
-    background-color: green;
-}
-
-.box:nth-child(3n) {
-    background-color: blue;
+main :nth-last-of-type(2n) {
+    background-color: violet;
 }
