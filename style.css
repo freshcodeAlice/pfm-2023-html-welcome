@@ -1,60 +1,74 @@
-/*
-Псевдокласи
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
 
-Псевдоклас - ключове слово, яке визначає стан елементу або його відношення з іншими елементами
-Діє тільки під час активності стані і перевизначає "нормальні" стилі елементу
-
-Стосуються стану елементу:
-
-:hover - стан наведення мишею на елемент
-:active - стан активації (посилання та кнопки в момент натиснення)
-:not(selector) - дозволяє обрати всі елементи ОКРІМ вказаного в дужках селектора
-
-Відношення елементів в ієрархії:
-:root - псевдоклас, який знаходить рутовий елемент документу (html)
-
-:first-child - перша дитина свого батька
-:first-of-type - перша дитина ТАКОГО ТИПУ
-
-:last-child - остання дитина свого батька
-:last-of-type - остання ТАКА дитина свого батька
-
-
-:nth-child() - кожна енна дитина свого батька
-:nth-last-child() - кожна енна дитина з кінця
-
-:nth-of-type() - кожна енна ТАКА дитина свого батька
-:nth-last-of-type() - кожна енна така дитина з кінця
-
-
-:only-child - єдина дитина свого батька
-:only-of-type - єдина ТАКА (такого типу) дитина свого батька
-
-:empty - пустий елемент без нащадків (текст також вважається нащадком)
-*/
-
-
-.box {
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
+.header {
+    background-image: url('./assets/beachshowcase.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
 }
 
 
-p:only-child {
-    color: red;
+.header-container {
+    color: #926239;
+    text-align: center;
+    padding-top: 20%;
 }
 
-body :only-of-type {
-    color: violet;
+.header-h1 {
+    font-size: 2.8em;
+    font-weight: 800;
+
+}
+
+.header-text {
+    margin: 1% 0;
+}
+
+.header-button {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 8px;
+    color: inherit;
+    border: 1px solid #926239;
+    background-color: transparent;
 }
 
 
-body :empty {
-    background-color: brown;
+.main-body {
+    font-size: 0.8em;
+    line-height: 1.5;
 }
 
-.par {
-    width: 20px;
-    height: 20px;
+.fc-article {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2%;
+    text-align: center;
+}
+
+.white-block {
+    background-color: #f4f4f4;
+    color: #926239;
+}
+
+.gold-block {
+    color: #f4f4f4;
+    background-color: #926239;
+}
+
+.inline-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.inline-article {
+    display: inline-block;
+    max-width: 33%;
+    box-sizing: border-box;
+    padding: 2%;
 }
