@@ -13,7 +13,7 @@ body {
 .wrapper {
   background-color: dodgerblue;
   width: 80vw;
-  height: 800px;
+  height: 1800px;
   position: relative;
 }
 
@@ -68,7 +68,18 @@ bottom - знизу
   right: 1em;
 }
 
+.child {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+
 
 .four {
-
+  position: sticky;
+  top: 0px
 }
