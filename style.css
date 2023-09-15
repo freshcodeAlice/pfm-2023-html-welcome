@@ -1,99 +1,33 @@
-/* General table styles */
-
-table {
-    font-size: 16px;
-    color: grey;
-    font-family: sans-serif;
-    text-align: center;
-
+body {
+  height: 500vh;
 }
 
 
-/* Head table styles */
-
-thead td {
-    padding: 20px 70px;
-    background-color: rgb(0, 89, 255);
-    color: white;
-    font-size: 1.1em;
-    /* border: 2px solid black; */
-}
-
-thead tr:nth-child(2) td {
-    padding: 10px 70px;
-}
-
-
-thead tr:first-child td:first-child {
-    vertical-align: middle;
-    font-weight: 800;
-}
-
-thead td p:first-child {
-    /* margin-bottom: 20px; */
-    /* font-weight: 800; */
-}
-
-.big-number {
-    font-size: 1.5em;
-    font-weight: 800;
-}
-
-
-/* Body table styles */
-
-tbody td {
-    padding: 12px 70px;
-}
-
-
-tbody tr:nth-child(even) {
-    background-color: #e9eaed;
-}
-
-tbody tr td:first-child {
-    color: white;
-    font-weight: 800;
-}
-
-
-tbody tr:nth-child(odd) td:first-child {
-    background-color: #4aa556;
+.par {
+  background-color: pink;
+  position: relative;
+  top: 50px;
+  left: 50px; 
 
 }
 
-tbody tr:nth-child(even) td:first-child {
-    background-color: #60d055;
-}
-
-
-tbody td button {
-    background-color: rgb(0, 89, 255);
-    color: white;
-    font-weight: 700;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-}
-
-
-/* Additional styles */
-
-.green-check {
-    color: #60d055;
-    font-size: 1.5em;
-}
-
-.red-cross {
-    color: red;
-    font-size: 1.5em;
-}
 
 
 /*
-dark green - #4aa556
-light green - #60d055;
+Позиціонування (position)
 
-grey - #e9eaed;
+Позиціонування - це відносне одне одного розташування елементів в потоці
+
+static - статичне - не позиціонований елемент (за замовчуванням)
+
+relative - відносне - позиціонування відносно свого "законного" місця в потоці
+fixed - фіксоване
+absolute - абсолютне
+sticky - клейке
+
+top - зверху
+left - зліва
+right - зправа
+bottom - знизу
 
 */
