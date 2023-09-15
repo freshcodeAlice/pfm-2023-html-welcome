@@ -1,15 +1,29 @@
 body {
-  height: 500vh;
+  margin: 0;
 }
 
-
-.par {
-  background-color: pink;
-  position: relative;
-  top: 50px;
-  left: 50px; 
-
+.container {
+  background-color: limegreen;
+  height: 1800px;
+  width: 80%;
+  margin: 0 auto;
 }
+
+.wrapper {
+  background-color: dodgerblue;
+  width: 80%;
+  height: 800px;
+}
+
+.inner {
+  text-align: center;
+  font-size: 1.5em;
+  width: 80px;
+  height: 80px;
+  background-color: forestgreen;
+  border: 1px solid black;
+}
+
 
 
 
@@ -21,7 +35,7 @@ body {
 static - статичне - не позиціонований елемент (за замовчуванням)
 
 relative - відносне - позиціонування відносно свого "законного" місця в потоці
-fixed - фіксоване
+fixed - фіксоване - позиціонується відносно viewport, елементи виривається з потоку 
 absolute - абсолютне
 sticky - клейке
 
@@ -29,5 +43,56 @@ top - зверху
 left - зліва
 right - зправа
 bottom - знизу
+
+*/
+
+
+.one {
+  background-color: green;
+}
+
+
+.two {
+  background-color: red;
+}
+
+.three {
+  background-color: blue;
+}
+
+.four {
+  background-color: yellow;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.top {
+  top: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+
+/*
+Практика:
+Створити 4 блоки з різними фоновими кольорами
+і розташувати їх по чотирьох кутах екрану
+(ліво верх, ліво низ, право верх, право низ)
+
+Перевикористовуйте класи
+
+Задачка з *: за наведення на елемент змінювати його розташування (здвинути на 10px)
 
 */
