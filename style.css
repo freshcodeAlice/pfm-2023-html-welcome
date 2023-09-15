@@ -39,47 +39,47 @@ static - статичне - не позиціонований елемент (з
 relative - відносне - позиціонування відносно свого "законного" місця в потоці
 fixed - фіксоване - позиціонується відносно viewport, елементи виривається з потоку 
 absolute - абсолютне - вириває елемент з потоку, розташування відносно найближчого не-статичного батьківського елемента
-sticky - клейке
+sticky - клейке - елемент поводиться як relative, поки не досягає вказаного відступа від краю viewport, після цього поводиться як fixed, поки батьківський контейнер не закінчиться (не прокрутиться до кінця)
 
 top - зверху
 left - зліва
 right - зправа
 bottom - знизу
 
+
+z-index - певне число, яке відображає координату елементу по осі Z
+Чим більша координата, тим ближче елемент до глядача 
+
 */
 
 
 .one {
   position: relative;
-  top: 20px;
-  left: 20px;
-}
-
-
-.two {
-  position: absolute;
-  top: 150px;
-  left: 10vw;
-}
-
-.three {
-  position: fixed;
-  top: 1em;
-  right: 1em;
-}
-
-.child {
-  width: 30px;
-  height: 30px;
-  background-color: yellow;
-  position: absolute;
-  top: 5px;
+  top:10px;
   left: 10px;
 }
 
 
+.two {
+  position: relative;
+}
+
+.three {
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+  z-index: 555555555555555555555555555555555555555555555551; /* bad practice!!! */
+}
+
 
 .four {
-  position: sticky;
-  top: 0px
+  position: relative;
+  bottom: 50px;
+  left: 20px;
+  z-index: 1;
+}
+
+
+.five {
+  position: static;
 }
