@@ -2,31 +2,6 @@ body {
   margin: 0;
 }
 
-.container {
-  background-color: limegreen;
-
-  width: 80%;
-  margin: 0 auto;
-
-}
-
-.wrapper {
-  background-color: dodgerblue;
-  width: 80vw;
-  height: 1800px;
-  position: relative;
-}
-
-.inner {
-  text-align: center;
-  font-size: 1.5em;
-  width: 80px;
-  height: 80px;
-  background-color: forestgreen;
-  border: 1px solid black;
-}
-
-
 
 
 /*
@@ -53,33 +28,37 @@ z-index - певне число, яке відображає координат�
 */
 
 
-.one {
-  position: relative;
-  top:10px;
-  left: 10px;
-}
+/*
+Зробити макет сторінки
+(заголовок, main, пара секцій з текстом) і створити елемент-модальне вікно, яке буде розташовуватись зверху сторінки
 
 
-.two {
-  position: relative;
-}
-
-.three {
-  position: relative;
-  bottom: 10px;
-  left: 10px;
-  z-index: 555555555555555555555555555555555555555555555551; /* bad practice!!! */
-}
+*/
 
 
-.four {
-  position: relative;
-  bottom: 50px;
-  left: 20px;
+.modal-background {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.462);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
 }
 
+.modal-window {
+  position: fixed;
+  width: 300px;
 
-.five {
-  position: static;
+  background-color: white;
+  z-index: 2;
+  top: 40vh;
+  left: 40vw;
+  padding: 20px;
+}
+
+.cross {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
