@@ -1,64 +1,39 @@
-body {
-  margin: 0;
+.nav-container {
+    color: white;
+    font-family: sans-serif;
+    font-size: 0;
 }
 
 
+.list-item {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 15px;
+    background-color: rgb(224, 75, 21);
+    font-size: 1rem;
+    position: relative;
+} 
 
-/*
-Позиціонування (position)
-
-Позиціонування - це відносне одне одного розташування елементів в потоці
-
-static - статичне - не позиціонований елемент (за замовчуванням)
-
-relative - відносне - позиціонування відносно свого "законного" місця в потоці
-fixed - фіксоване - позиціонується відносно viewport, елементи виривається з потоку 
-absolute - абсолютне - вириває елемент з потоку, розташування відносно найближчого не-статичного батьківського елемента
-sticky - клейке - елемент поводиться як relative, поки не досягає вказаного відступа від краю viewport, після цього поводиться як fixed, поки батьківський контейнер не закінчиться (не прокрутиться до кінця)
-
-top - зверху
-left - зліва
-right - зправа
-bottom - знизу
-
-
-z-index - певне число, яке відображає координату елементу по осі Z
-Чим більша координата, тим ближче елемент до глядача 
-
-*/
-
-
-/*
-Зробити макет сторінки
-(заголовок, main, пара секцій з текстом) і створити елемент-модальне вікно, яке буде розташовуватись зверху сторінки
-
-
-*/
-
-
-.modal-background {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.462);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+.list-item:hover {
+    background-color: rgb(143, 58, 28);
+    cursor: pointer;
 }
 
-.modal-window {
-  position: fixed;
-  width: 300px;
-
-  background-color: white;
-  z-index: 2;
-  top: 40vh;
-  left: 40vw;
-  padding: 20px;
+.sub-list {
+    position: absolute;
+    display: none;
+    left: 0;
+    /* display: block; */
+    background-color: rgb(224, 75, 21);
+    top:100%;
 }
 
-.cross {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.sub-list-item {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.list-item:hover > .sub-list{
+    display: block;
 }
