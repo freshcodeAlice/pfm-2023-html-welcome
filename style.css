@@ -37,3 +37,23 @@
 .list-item:hover > .sub-list{
     display: block;
 }
+
+
+.sub-sub-list {
+    position: absolute;
+    top: 0;
+    position: absolute;
+    left: 100%;
+}
+
+
+.sub-sub-item {}
+
+
+/*
+Задача мінімум: зробити один додатковий рівень випадаючого меню
+
+Задачка з *: реалізувати два додаткових рівня випадаючого меню
+
+
+*/
