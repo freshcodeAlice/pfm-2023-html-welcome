@@ -9,21 +9,12 @@ position: relative;
 
 p::before, p::after {
     color: red;
-    background-color: rgba(173, 216, 230, 0.551);
     width: 30px;
     height: 30px;
     content: '';
-    display: inline-block;
-    position: absolute;
+    background-image: url('./assets/upload-svgrepo-com.svg');
+    display: block;
+    font-size: 1em;
+    background-size: cover;
 }
 
-
-p::before {
-    top: -1rem;
-    left: 0;
-}
-
-p::after {
-    bottom:0;
-    right: 3rem;
-}
