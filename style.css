@@ -8,15 +8,16 @@ position: relative;
 }
 
 p::before {
-    color: rgba(76, 50, 132, 0.366);
-    width: 30px;
-    height: 30px;
-    content: '\2745';
+    background-color: rgba(59, 38, 105, 0.75);
+    width: 50px;
+    height: 50px;
+border-radius: 50%;
+    content: '';
     display: block;
-    font-size: 4em;
     position: absolute;
-    top: 1rem;
-    left: 50%;
+    top: 20%;
+    left: 40%;
+
 }
 
 
