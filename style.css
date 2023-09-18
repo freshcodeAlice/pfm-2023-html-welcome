@@ -7,14 +7,22 @@ color: blue;
 position: relative;
 }
 
-p::before, p::after {
-    color: red;
+p::before {
+    color: rgba(76, 50, 132, 0.366);
     width: 30px;
     height: 30px;
-    content: '';
-    background-image: url('./assets/upload-svgrepo-com.svg');
+    content: '\2745';
     display: block;
-    font-size: 1em;
-    background-size: cover;
+    font-size: 4em;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
 }
 
+
+
+/*
+Створити напівпрозорий кружечок посередині параграфу під текстом
+
+
+*/
