@@ -3,35 +3,27 @@ body {
 }
 
 p {
-color: blue
+color: blue;
+position: relative;
 }
 
-/* p::before, p::after {
+p::before, p::after {
     color: red;
-    font-size: 3em;
-    background-color: lightblue;
+    background-color: rgba(173, 216, 230, 0.551);
     width: 30px;
     height: 30px;
     content: '';
     display: inline-block;
-} */
-
-li::first-letter {
-    color: red;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: cadetblue;
+    position: absolute;
 }
 
 
-/*
-Створити темплейт сторінки з кількома параграфами, кожен перший рядок параграфу виділити фоновим кольором.
+p::before {
+    top: -1rem;
+    left: 0;
+}
 
-Створити список з 8 елементів, першу літеру кожного елементу списку зробити іншим шрифтом, іншим кольором і на фоновому кольорі.
-
-
-
-*/
-
-p::first-line {
-    background-color: blanchedalmond;
+p::after {
+    bottom:0;
+    right: 3rem;
 }
