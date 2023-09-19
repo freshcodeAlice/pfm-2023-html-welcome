@@ -49,6 +49,13 @@
 }
 
 
+svg {
+    fill: red;
+}
+
+
+
+
 .button:hover {
     cursor: pointer;
     -webkit-box-shadow: 0px 6px 5px 0px rgba(179,170,179,1);
