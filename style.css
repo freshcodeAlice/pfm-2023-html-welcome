@@ -12,14 +12,22 @@ body {
     height: 100vh;
     border: 2px solid black;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
+.one {
 
+}
 
+.two {
+    
+}
 
+.four {
+    margin-left: auto;
+}
 
 
 .item {
@@ -32,13 +40,3 @@ body {
     text-align: center;
 
 }
-
-/*
-Таска:
-
-
-Зробити контейнер розміром в повний viewport
-і відцентрувати елемент всередині рівно посередині
-
-
-*/
