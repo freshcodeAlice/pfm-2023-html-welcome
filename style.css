@@ -8,12 +8,13 @@ body {
 
 
 .container {
-    height: 600px;
+    width: 100vw;
+    height: 100vh;
     border: 2px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
 }
 
 
@@ -22,8 +23,8 @@ body {
 
 
 .item {
-    /* width: 80px;
-    height: 80px; */
+    width: 80px;
+    height: 80px;
     background-color: teal;
     color: white;
     font-size: 2em;
