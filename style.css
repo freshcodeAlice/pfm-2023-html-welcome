@@ -1,9 +1,8 @@
 
 .container {
-    width: 100%;
+    width: 1000px;
     height: 600px;
     border: 2px solid black;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,25 +20,45 @@
     font-size: 2em;
 
     flex-basis: 100px;
-    width: 80px;
-    min-width: 120px;
+    /* flex-grow: 1; */
 }
 
 
 .one {
-   
+   flex-grow: 1;
 }
 
 .two {
-   
+   flex-grow: 3;
 }
 
 .three {
-    
+    flex-grow: 2;
 }
 
 .four {
-   
+   flex-grow: 1;
 }
 
-.five {}
+.five {
+    flex-grow: 2;
+}
+
+/*
+Таска
+
+1	3	2	1	2
+flex-basis = 100px
+Батьківський = 1000px
+
+
+Сума коефіцієнтів = 9
+Дол вільного місця = 500/9 = 55.5
+
+100+55.5*1	100+55.5*3	100+55.5*2	100+55.5*1	100+55.5*2
+155		266		211		155		211
+
+
+
+
+*/
