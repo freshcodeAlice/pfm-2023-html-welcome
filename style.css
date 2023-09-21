@@ -1,11 +1,11 @@
 
 .container {
-    width: 1000px;
+    width: 100%;
     height: 600px;
     border: 2px solid black;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     align-items: flex-start;
 }
 
@@ -20,28 +20,34 @@
     font-size: 2em;
 
     flex-basis: 100px;
-    /* flex-grow: 1; */
+    /* 
+    По дефолту
+    flex-grow: 0; - елементи не зростають
+    
+    */
+
+    flex-shrink: 1;
 }
 
 
 .one {
-   flex-grow: 1;
+
 }
 
 .two {
-   flex-grow: 3;
+  flex-shrink: 2;
 }
 
 .three {
-    flex-grow: 2;
+  
 }
 
 .four {
-   flex-grow: 1;
+ 
 }
 
 .five {
-    flex-grow: 2;
+ 
 }
 
 /*
