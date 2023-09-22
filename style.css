@@ -1,5 +1,6 @@
 :root {
     --header-size: 10vh;
+    --main-color: rgb(45, 45, 45);
 }
 
 header {
@@ -23,14 +24,51 @@ header {
     flex-direction: row;
 }
 
-.nav-item {
 
-    color: rgb(34, 31, 31);
+
+
+/*
+Transition - перехід (плавність анімації) для елементу
+
+Вказується в ОСНОВНОМУ правилі елементу (точка А)
+transition-delay - відстрочка (відтермінування початку анімації)
+transition-duration - тяглість анімації (скільки часу вона триває)
+transition-property - яку властивість треба анімувати
+transition-timing-function - функція часу (принцип розкадровки)
+
+
+
+*/
+
+.nav-item { /* точка А */
+    color: var(--main-color);
     font-size: 1.5em;
     padding: 1em;
+    transition-duration: 500ms;
+    transition-property: all;
+    transition-timing-function: linear;
 }
 
+.nav-item:hover { /* точка В */
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+}
 
+/*
+.nav-item::after {
+    width: 0;
+    height: 3px;
+    background-color: var(--main-color);
+    content: '';
+    display: block;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+*/
 
 .banner {
     width: 100%;
@@ -54,3 +92,4 @@ header {
     box-sizing: border-box;
     margin: 2vh 1vw;
 }
+
