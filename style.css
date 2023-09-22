@@ -40,35 +40,34 @@ transition-timing-function - функція часу (принцип розка�
 
 */
 
-.nav-item { /* точка А */
+.nav-item { 
     color: var(--main-color);
     font-size: 1.5em;
     padding: 1em;
-    transition-duration: 500ms;
-    transition-property: all;
-    transition-timing-function: linear;
+   
 }
 
-.nav-item:hover { /* точка В */
+.nav-item:hover { 
     cursor: pointer;
-    background-color: var(--main-color);
-    color: white;
 }
 
-/*
-.nav-item::after {
-    width: 0;
+
+.nav-item::after { /* точка А */
+    width: 100%;
     height: 3px;
     background-color: var(--main-color);
     content: '';
     display: block;
+    transition-duration: 500ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
 }
 
-.nav-item:hover::after {
-    width: 100%;
+.nav-item:hover::after { /* точка В */
+    width: 0;
 }
 
-*/
+
 
 .banner {
     width: 100%;
