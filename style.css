@@ -1,6 +1,10 @@
+:root {
+    --header-size: 10vh;
+}
+
 header {
     width: 100%;
-    height: 10vh;
+    height: var(--header-size);
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid grey;
@@ -28,10 +32,25 @@ header {
 
 
 
+.banner {
+    width: 100%;
+    height: calc(100vh - var(--header-size));
+    background-image: url('./assets/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg');
+}
 
 
-/*
-Зробити горизонтальний хедер, лого зліва, меню справа
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5vh 10vw;
+    justify-content: space-between;
+}
 
 
-*/
+.news-card {
+    width: 30%;
+    border: 1px solid black;
+    padding: 2em;
+    box-sizing: border-box;
+    margin: 2vh 1vw;
+}
