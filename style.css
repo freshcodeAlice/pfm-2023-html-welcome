@@ -10,33 +10,16 @@
 
 
 .form {
-    font-size: 0.7em;
-    font-family: sans-serif;
-    width: 250px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     margin: 0 auto;
     padding: 1%;
-    border: 1px solid #d0d7de;
-    border-radius: 8px;
-    background-color: #edf0f3;
 }
 
 .form * {
     margin: 5px 0;
-}
-
-
-.form input {
-    border-radius: 5px;
-    border: 1px solid #d0d7de;
-    height: 1.5em;
-    margin-top: 0;
-}
-
-a{
-    color: blue
 }
 
 
@@ -47,17 +30,4 @@ a{
     justify-content: space-between;
 }
 
-button {
-    background-color: rgb(48, 125, 37);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 0.4em 0;
-}
-
-
-/*
-Зверстати форму входу, як на github
-
-
-*/
+/* value - значення */
