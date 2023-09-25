@@ -1,173 +1,38 @@
-:root {
-    --header-size: 10vh;
-    --main-color: rgb(45, 45, 45);
-}
+/*
+Форми мають бути
+1. Зручні
+2. Інформативні
+3. Приємні оку
 
-header {
-    width: 100%;
-    height: var(--header-size);
+
+*/
+
+
+
+.form {
+    width: 300px;
     display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid grey;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1em;
-    box-sizing: border-box;
-}
-
-.logo {
-    align-self: stretch;
-}
-
-.nav-list {
-    display: flex;
-    flex-direction: row;
-}
-
-
-.sanbox {
-    width: 100%;
-    height: 50vh;
-
-}
-
-.box-container {
-    width: 150px;
-    height: 150px;
+    flex-direction: column;
+    border: 1px solid black;
     margin: 0 auto;
-    position: relative;
-} 
-
-.front {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border: 1px solid black;
-    background-color: dodgerblue;
-    position: absolute;
-    transition: all 0.5s ease;
+    padding: 1%;
 }
 
-.box-container:hover .front {
-    transform: rotateY(90deg);
-}
-
-.back {
-    position: absolute;
-    transform: rotateY(90deg);
-    background-color: black;
-    transition: all 0.5s linear;
-    z-index: 2;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: white;
-
-}
-
-.box-container:hover .back {
-   transform: rotateY(0deg);
-}
-
-/*
-Transform - трансформування елементу
-
-rotate(значення у градусах)
-rotateX() - поворот по горизонталі
-rotateY() - поворот по вертикалі
-rotateZ() - поворот по осі z
-
-skew() - розтягування елементу
-skewX()  - по горизонталі
-skewY() - по вертикалі 
-
-scale() - масштабування елементу
-
-translate(x, y) - переміщення елементу
-*/
-
-
-
-
-
-/*
-Transition - перехід (плавність анімації) для елементу
-
-Вказується в ОСНОВНОМУ правилі елементу (точка А)
-transition-delay - відстрочка (відтермінування початку анімації)
-transition-duration - тяглість анімації (скільки часу вона триває)
-transition-property - яку властивість треба анімувати
-transition-timing-function - функція часу (принцип розкадровки)
-
-
-transition: transition-property transition-duration transition-timing-function
-*/
-
-.nav-item { 
-    color: var(--main-color);
-    font-size: 1.5em;
-    padding: 1em;
-   
-}
-
-.nav-item:hover { 
-    cursor: pointer;
+.form * {
+    margin: 5px 0;
 }
 
 
-.nav-item::after { /* точка А */
-    width: 0;
-    height: 3px;
-    background-color: var(--main-color);
-    content: '';
-    display: block;
-    transition-duration: 500ms;
-    transition-property: all;
-    transition-timing-function: ease-in-out;
-}
-
-.nav-item:hover::after { /* точка В */
-    width: 100%;
-}
-
-
-
-.banner {
-    width: 100%;
-    height: calc(100vh - var(--header-size));
-    background-image: url('./assets/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg');
-}
-
-
-.news {
+.flex-row {
     display: flex;
-    flex-wrap: wrap;
-    padding: 5vh 10vw;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
 
-.news-card {
-    width: 30%;
-    border: 1px solid black;
-    padding: 2em;
-    box-sizing: border-box;
-    margin: 2vh 1vw;
-}
-
-
-
-
 /*
-Таска на самостійну роботу
-
-Переписати картки в секції news таким чином, щоб кожна картка мала два боки (фронт і бек)
-На фронті <h3>, на беку - <p>
-Всі картки за наведення мають по-різному обертатись - по горизонталі, по вертикалі, по діагоналі
-
-
+Зверстати форму входу, як на github
 
 
 */
