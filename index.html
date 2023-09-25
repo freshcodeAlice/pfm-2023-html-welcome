@@ -14,21 +14,45 @@
 
 <form method="GET" class="form">
   <label for="name-field">Type your name  </label>
+
   <input type="text" id="name-field" name="username"
    />
-
+  
   <label class="flex-row"> Type your email
-    <input type="email" placeholder="mail@example.com" name="email"/>
+    <input 
+          type="email" 
+          placeholder="mail@example.com" 
+          name="email" 
+          required
+          />
   </label>
-    <input type="password" placeholder="Type your password"/>
+    <input type="password" placeholder="Type your password"
+    required
+    />
     <label for="tel-number">Type your phone number</label>
-    <input type="tel" id="tel-number" placeholder="+3805012312354"/>
+    <input 
+        type="tel" 
+        id="tel-number" 
+        placeholder="+3805012312354"/>
 
-    Choose your gender
-    <label><input type="radio" name="gender" value="male"/> Male</label>
-    <label><input type="radio" name="gender" value="female"/> Female </label>
-    <label><input type="radio" name="gender" value="Non-binary"/> Non-binary</label>
+    <span class="gender-label">Choose your gender</span>
+    <label>
+      <input 
+        type="radio" 
+        name="gender" 
+        value="male"
+        /> Male</label>
+    <label><input 
+          type="radio" 
+          name="gender" 
+            value="female"/> Female </label>
+    <label><input 
+            type="radio"  
+            name="gender" 
+            value="Non-binary"/> Non-binary</label>
 
+    <label><input type="checkbox" name="adult" /> <span>Are you adult?</span></label>
+    <label><input type="checkbox" name="agree" /> Are you agree with rules?</label>
    <button>Click me</button>
 
  </form>

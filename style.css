@@ -31,3 +31,20 @@
 }
 
 /* value - значення */
+
+.red-star {
+color: red;
+font-size: 1.1em;
+}
+
+
+.gender-label::after {
+    content: '*';
+    color: red;
+}
+
+label[for="name-field"] {
+    background-color: blanchedalmond;
+}
+
+
