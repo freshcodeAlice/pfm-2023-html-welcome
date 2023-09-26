@@ -1,18 +1,13 @@
 @import url('./reset.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 /*
 at-rules (@)
-@import
-@font-face
-@media
 
-@charset
-@namespace
-@supports
-@document
-@page
-@keyframes
-@counter-style
+@import - імпортує css в css (вказується зверху, на початку css-файла)
+
+@font-face - завантажує шрифти з віддаленого сервера (або локально з сервера, на якому ми працюємо)
+
+@media
 
 
 */
@@ -21,5 +16,7 @@ at-rules (@)
 h1 {
     color: blue;
     font-size: 2em;
-    font-weight: bolder;
+
+    margin: 1em 0;
+    font-family: 'Mooli', sans-serif;
 }
