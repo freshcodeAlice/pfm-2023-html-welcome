@@ -29,19 +29,19 @@ article {
     padding: 10px;
 }
 
+
+article:hover {
+    background-color: blanchedalmond;
+}
+
 h1 {
     font-size: 1.5em;
     margin: 1em 0;
 }
 
 
-.box {
-    width: 100px;
-    height: 100px;
-    background-color: green;
-}
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
     main {
         flex-direction: column;
  
@@ -52,13 +52,35 @@ h1 {
         width: auto;
     }
 
-    .box {
-        background-color: blue;
-    }
+  article:hover {
+    background: none;
+  }
 }
 
+/* Breakpoint - точка зламу, тобто розмір після якого макет змінюється 
 
-/*
-Створити блок з зеленими квадратиками, при зменшенні екрану до 400px квадратики мають стати синіми
+
+Breakpoint	
+
+X-Small	<576px
+Small ≥576px
+Medium	≥768px
+Large	≥992px
+Extra large	≥1200px
+Extra extra large ≥1400px
+
+
 
 */
+
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    article {
+        width: 30vw;
+    }
+}
