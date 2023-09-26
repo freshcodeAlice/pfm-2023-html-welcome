@@ -1,13 +1,5 @@
 @import url('./reset.css');
 
-
-
-.background{
-    width: 100%;
-    height: 100vh;
-    background-color: blue;
-}
-
 /*
 Зверстати форму входу
 email
@@ -15,24 +7,88 @@ password
 
 button 
 
-
-
 Форма має в ширину 30vw
 і стоїть посередині екрану
-
-
-
 */
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
-    .background{
-        background-color: yellow;
-    }
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/pexels-johannes-plenio-1423600.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-color: rgba(0, 0, 0, 0.357);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 
-@media screen and (min-width: 1200px) {
-    .background {
-        background-color: green;
+.form {
+    width: 30vw;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    box-sizing: border-box;
+    color: white;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
+.form h1 {
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.flex-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+label {
+    font-weight: 700;
+}
+
+button {
+    flex-grow: 1;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 0.5em;
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.876);
+    color: black;
+}
+
+
+@media screen and (max-width: 700px) {
+    .form {
+        width: 80vw;
     }
+
+
+    .flex-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    
 }
