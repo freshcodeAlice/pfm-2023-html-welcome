@@ -1,65 +1,25 @@
+@import url('./reset.css');
+
 /*
-Форми мають бути
-1. Зручні
-2. Інформативні
-3. Приємні оку
+at-rules (@)
+@import
+@font-face
+@media
+
+@charset
+@namespace
+@supports
+@document
+@page
+@keyframes
+@counter-style
 
 
 */
 
 
-
-.form {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    margin: 0 auto;
-    padding: 1%;
-}
-
-.form * {
-    margin: 5px 0;
-}
-
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-
-/* value - значення */
-
-.red-star {
-color: red;
-font-size: 1.1em;
-}
-
-
-.gender-label::after {
-    content: '*';
-    color: red;
-}
-
-input[type="email"] {
-    background-color: yellowgreen;
-}
-
-input[type="checkbox"] {
-   appearance: none;
-   width: 10px;
-   height: 10px;
-background-color: white;
-border: 2px solid black;
-   border-radius: 1px;
-}
-
-input[type="checkbox"]:checked {
-/*    background-color: white; */
-    border: 3px solid rgb(0, 0, 0);
-    background-image: url('./assets/checkbox.png');
-    background-size: cover;
-    background-color: black;
+h1 {
+    color: blue;
+    font-size: 2em;
+    font-weight: bolder;
 }
