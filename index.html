@@ -12,80 +12,65 @@
 
 <body>
 
-<form method="GET" class="form">
-  <label for="name-field">Type your name  </label>
+  <form method="GET" class="form">
+    <label for="name-field">Type your name </label>
 
-  <input type="text" id="name-field" name="username"
-   />
-  
-  <label class="flex-row"> Type your email
-    <input 
-          type="email" 
-          placeholder="mail@example.com" 
-          name="email" 
-          required
-          />
-  </label>
-    <input type="password" placeholder="Type your password"
-    required
-    />
+    <input type="text" id="name-field" name="username" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" />
+
+    <label class="flex-row"> Type your email
+      <input type="email" placeholder="mail@example.com" name="email" required />
+    </label>
+    <input type="password" placeholder="Type your password" required />
     <label for="tel-number">Type your phone number</label>
-    <input 
-        type="tel" 
-        id="tel-number" 
-        placeholder="+3805012312354"/>
+    <input type="tel" id="tel-number" placeholder="+3805012312354" />
 
     <span class="gender-label">Choose your gender</span>
     <label>
-      <input 
-        type="radio" 
-        name="gender" 
-        value="male"
-        /> Male</label>
-    <label><input 
-          type="radio" 
-          name="gender" 
-            value="female"/> Female </label>
-    <label><input 
-            type="radio"  
-            name="gender" 
-            value="Non-binary"/> Non-binary</label>
+      <input type="radio" name="gender" value="male" /> Male</label>
+    <label><input type="radio" name="gender" value="female" /> Female </label>
+    <label><input type="radio" name="gender" value="Non-binary" /> Non-binary</label>
 
     <label class="flex-row"><input type="checkbox" name="adult" /> <span> Are you adult?</span></label>
     <label><input type="checkbox" name="agree" /> Are you agree with rules?</label>
 
-      <input type="file" />
+    <input type="file" />
 
-      <input type="hidden" />
+    <input type="hidden" />
 
-      <input type="range" min="1" max="100" id="range"/>
-
-
-      <input type="color" />
+    <input type="range" min="1" max="100" id="range" />
 
 
-      <input type="date" />
-      <input type="datetime-local" />
+    <input type="color" />
 
 
-      <textarea ></textarea>
+    <input type="date" />
+    <input type="datetime-local" />
 
 
-      <label>
-        Choose yout city
-        <input name="city" type="text" list="city-list"/>
-        <datalist  id="city-list">
-          <option value="Kyiv">Kyiv</option>
-          <option value="Kharkiv">Kharkiv</option>
-          <option value="Odesa">Odesa</option>
-          <option value="Lviv">Lviv</option>
-        </datalist>
-      </label>
-   <button>Click me</button>
+    <textarea></textarea>
+
+
+    <label>
+      Choose yout city
+      <input name="city" type="text" list="city-list" />
+      <datalist id="city-list">
+        <option value="Kyiv">Kyiv</option>
+        <option value="Kharkiv">Kharkiv</option>
+        <option value="Odesa">Odesa</option>
+        <option value="Lviv">Lviv</option>
+      </datalist>
+    </label>
+
+    <input type="number" />
+
+
+    <input type="submit" value="Click input" />
+    <button>Click me</button>
+    <button type="reset">Reset form</button>
 
 
 
- </form>
+  </form>
 
 
 </body>
