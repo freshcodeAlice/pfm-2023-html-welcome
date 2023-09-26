@@ -3,6 +3,10 @@
     font-family: 'Mooli';
     src: url('./fonts/Mooli-Regular.ttf') format("truetype");
 }
+@font-face {
+    font-family: 'Kablammo';
+    src: url('./fonts/Kablammo-Regular-VariableFont_MORF.ttf') format("truetype");
+}
 
 /*
 at-rules (@)
@@ -13,7 +17,6 @@ at-rules (@)
 
 @media
 
-
 */
 
 
@@ -22,5 +25,12 @@ h1 {
     font-size: 2em;
 
     margin: 1em 0;
-    font-family: 'Mooli';
+    font-family: 'Kablammo';
+}
+
+/* Практика: знайти будь-який красивий шрифт на гугл-фонт, завантажити його локально та підключити через font-face */
+
+
+p {
+    font-family: 'Mooli', Arial, sans-serif;
 }
