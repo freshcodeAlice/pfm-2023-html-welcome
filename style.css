@@ -1,16 +1,1 @@
 @import url('./reset.css');
-
-.box {
-    width: 100%;
-    height: 100vh;
-    background-image: url('./assets/mobile-forest.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-@media screen and (min-resolution: 300dpi) {
-    .box { 
-        background-image: url('./assets/pexels-johannes-plenio-1423600.jpg');
-    }
-}
