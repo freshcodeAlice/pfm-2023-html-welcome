@@ -4,15 +4,12 @@
     /* height: 600px; */
     border: 1px solid black;
     display: grid;
-    grid-template-columns: 200px 300px 100px;
-    /*    grid-template-columns: 100px repeat(3, 1fr) */
-    grid-template-rows: repeat(5, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 100px);
 }
 
 
 .box {
-    /* width: 100px;
-    height: 100px; */
     background-color: cornsilk;
     font-size: 2em;
     text-align: center;
@@ -27,15 +24,47 @@ Grid - сітка
 Керування колонками 
 grid-template-columns
 
+Керування рядками
+grid-template-rows
+
 1fr (fraction) - доля розміру батьківського елементу
 
 */
 
-/*
-Зробити 15 елементів всередині контейнера, і вишикувати їх у наступну схему:
-1 колонка - 200px
-2 колонка - 300px
-3 колонка - 100px
 
-Всі рядки мають бути однаковими, по 100px
-*/
+.one {
+    background-color: blanchedalmond;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.two {
+
+}
+
+.three {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.four {
+    grid-column: 1 / 3;
+    grid-row: 4 / 6;
+    z-index: 2;
+}
+
+.nine {
+    grid-row: 5 / 7;
+    grid-column: 3 / 4;
+}
+
+.seven {
+    grid-column: 1 / 2;
+}
+
+.eight {
+    grid-row: 5 / 7;
+    grid-column: 2 / 3;
+}
