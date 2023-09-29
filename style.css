@@ -4,7 +4,7 @@
     /* height: 600px; */
     border: 1px solid black;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-rows: repeat(6, 100px);
     column-gap: 10px;
     row-gap: 10px;
@@ -19,57 +19,43 @@
 
 }
 
-/*
-Grid - сітка
-по-дефолту - 1 колонка
 
-Керування колонками 
-grid-template-columns
-
-Керування рядками
-grid-template-rows
-
-1fr (fraction) - доля розміру батьківського елементу
-
-*/
-
-
-.one {
-    background-color: blanchedalmond;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
+.one, .four {
+  grid-row: 1 / 3 ;
 }
 
-.two {
-
+.one, .nine {
+    grid-column: 1 / 3;
 }
 
-.three {
-    grid-column-start: 3;
-    grid-column-end: 5;
-}
-
-.four {
-    /* grid-column: 1 / 3;
-    grid-row: 4 / 6; */
-    grid-area: 4 / 1 / 6 / 3;
-    /* grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end
-    */
-    z-index: 2;
-}
-
-.nine {
-    grid-row: 5 / 7;
+.two, .three, .ten, .eleven {
     grid-column: 3 / 4;
 }
 
-.seven {
+
+.four, .twelve {
+    grid-column: 4 / 5;
+
+}
+
+
+.five {
     grid-column: 1 / 2;
 }
 
+.five, .eight {
+    grid-row: 3 / 5;
+}
+
+.six, .seven {
+   grid-column: 2 / 3;
+}
+
 .eight {
-    grid-row: 5 / 7;
-    grid-column: 2 / 3;
+   grid-column: 3 / 5;
+}
+
+
+.nine, .twelve {
+ grid-row: 5 / 7;
 }
